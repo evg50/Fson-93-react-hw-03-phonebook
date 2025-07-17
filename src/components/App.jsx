@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import FriendList from './FriendList';
 import Profile from './Profile';
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
     >
       {/* React homework template first */}
       <Profile />
+      <FriendList />
     </div>
   );
 };
