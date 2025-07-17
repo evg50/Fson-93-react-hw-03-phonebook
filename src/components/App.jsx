@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
 
+import Phonebook from './Phonebook/Phonebook';
+import { useState } from 'react';
 export const App = () => {
+  const [contacts, setContacts] = useState([]);
+  const [name, setName] = useState('');
+
   return (
     <div
       style={{
@@ -12,7 +17,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      {/* React homework template first */}
+      <Phonebook />
     </div>
   );
 };
